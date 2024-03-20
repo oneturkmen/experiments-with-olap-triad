@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "olap-more-than-memory"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "olap_more_than_memory"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+polars = "^0.20.15"
+duckdb = "^0.10.0"
+vaex = "^4.17.0"
+pyarrow = "^15.0.1"
+dask = {extras = ["dataframe"], version = "^2024.3.1"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
